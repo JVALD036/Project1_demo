@@ -20,7 +20,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg HomeBackgroundColorScheme">
   <div class="container">
     <a class="navbar-brand" href="./index.html">Fantasia</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="./index.html">Trending</a>
+          <a class="nav-link active" href="#TrendingItems">Trending</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="vanity.html">Vanity</a>
@@ -41,13 +41,14 @@
           <a class="nav-link" href="#">Ability</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
       <form class="d-flex">
         <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
         <button class="button" type="submit">Search</button>
       </form>
+      <a href="./cart.html"><img class="PurchaseCartIcon" src="./public/img/icons/shopping-cart.png" alt="Purchase"></a>
     </div>
   </div>
 </nav>
@@ -65,73 +66,176 @@
 
 
 
-<section class="Trending">
-  <div class="container py-5">
-    <h2 class="text-center py-2" style="font-family: 'Ibarra Real Nova', serif;">Trending Wares</h2>
-    <div class="row">
-      <div class="col-3">
-        <div class="card" style="max-width: 18rem; min-width: 18rem; margin: auto; background-color: rgba(0, 0, 0, 0.05);">
-          <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Item</h5>
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn m-auto" style="color: rgb(250, 250, 250); background-color: rgba(255, 0, 0, 0.72);">Purchase</a>
-              <a href="#" class="btn m-auto" style="color: rgb(255, 255, 255); background-color: blueviolet;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card" style="max-width: 18rem; min-width: 18rem; margin: auto; background-color: rgba(0, 0, 0, 0.05);">
-          <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Item</h5>
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn m-auto" style="color: rgb(250, 250, 250); background-color: rgba(255, 0, 0, 0.72);">Purchase</a>
-              <a href="#" class="btn m-auto" style="color: rgb(255, 255, 255); background-color: blueviolet;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card" style="max-width: 18rem; min-width: 18rem; margin: auto; background-color: rgba(0, 0, 0, 0.05);">
-          <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Item</h5>
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn m-auto" style="color: rgb(250, 250, 250); background-color: rgba(255, 0, 0, 0.72);">Purchase</a>
-              <a href="#" class="btn m-auto" style="color: rgb(255, 255, 255); background-color: blueviolet;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card" style="max-width: 18rem; min-width: 18rem; margin: auto; background-color: rgba(0, 0, 0, 0.05);">
-          <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Item</h5>
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn m-auto" style="color: rgb(250, 250, 250); background-color: rgba(255, 0, 0, 0.72);">Purchase</a>
-              <a href="#" class="btn m-auto" style="color: rgb(255, 255, 255); background-color: blueviolet;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!--Carousel of items-->
+<div class="container py-5" id="TrendingItems">
+  <div class="row">
+    <h3 class="text-center pb-3" style="font-family: 'Ibarra Real Nova', serif;">Trending Wares</h3>
+      <div class="col justify-content-center">
+          <div id="carouselExampleControls" class="carousel slide HomeBorderColorScheme" data-bs-ride="carousel">
+              <div class="carousel-inner">
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+              <!-- Start of First slide of items in carousel-->
+              <div class="carousel-item active">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-4 d-flex justify-content-center" style="object-fit: contain">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 0 0</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 0 1</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 0 2</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- End of First slide of items in carousel-->
+
+              <!-- Start of Second slide of items in carousel-->
+              <div class="carousel-item">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-4 d-flex justify-content-center" style="object-fit: contain">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 1 0</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 1 1</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 1 2</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- End of Second slide of items in carousel-->
+
+              <!-- Start of Third slide of items in carousel-->
+              <div class="carousel-item">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-4 d-flex justify-content-center" style="object-fit: contain">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 2 0</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 2 1</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center">
+                              <div class="card py-1 my-5 HomeBackgroundColorScheme" style="max-width: 18rem; min-width: 18rem; margin: auto;">
+                                  <img src="..." class="card-img-top m-auto" alt="..." style="max-width: 17rem; min-width: 17rem">
+                                  <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">Item 2 2</h5>
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-center">
+                                      <a href="#" class="btn m-auto btnPurchaseColorScheme">Purchase</a>
+                                      <a href="#" class="btn m-auto btnCartColorScheme">Add to Cart</a>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- End of Third slide of items in carousel-->
+              </div>
+
+              <!--Start of 'Previous' and Next controls for carousel-->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-prev-icon" aria-hidden="true" style="filter:invert(90%);"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-next-icon" aria-hidden="true" style="filter:invert(90%);"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+              <!--End of 'Previous' and Next controls for carousel-->
+
+          </div>
+      </div>
+  </div>
+</div>
+<!--End of carousel of items-->
+
 
 <section class="Wares">
   <div class="container pt-5">
@@ -139,6 +243,9 @@
       <div class="col-lg-12 m-auto">
         <div class="row text-center">
           <h2 style="font-family: 'Ibarra Real Nova', serif;">Available Services</h2>
+          <br>
+          <br>
+          <br>
           <div class="col-lg-2">
             <img src="./public/img/icons/weapons.png" class="img-icon " alt=" ">
             <h6>Weapons and armor</h6>

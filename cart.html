@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Navbar Start-->
+<nav class="navbar navbar-expand-lg CartBackgroundColorScheme">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">Fantasia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Trending</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="./vanity.html">Vanity</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#">Utility</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="px-2 search" type="search" placeholder="Search" aria-label="Search" style="border: 2px solid rgb(255, 0, 0)">
+          <button class="button" type="submit" style="background-color: rgb(255, 0, 0)">Search</button>
+        </form>
+        <a href="./cart.html"><img class="PurchaseCartIcon" src="./public/img/icons/shopping-cart.png" alt="Purchase"></a>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
+
+  <!--Page Start-->
+  <div class="container py-5">
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                <input type="email" class="form-control mb-1" id="exampleFormControlInput1" placeholder="John">
+                <label for="exampleFormControlInput1" class="form-label">Doe</label>
+                <input type="email" class="form-control mb-1" id="exampleFormControlInput1" placeholder="Doe">
+                <label for="exampleFormControlInput1" class="form-label">Credit Card Number</label>
+                <input type="email" class="form-control mb-1" id="exampleFormControlInput1" placeholder="0000-0000-0000-0000">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control mb-1" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Notes/Requests/Other</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="button" class="btn btn-outline-danger">Purchase</button>
+        </div>
+        <div class="col-6 justify-content-center py-3">
+            <div class="card CartBackgroundColorScheme" style="width: auto">
+                <div class="card-header">
+                  Item Cart
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Item 0 0 - 9.99</li>
+                  <li class="list-group-item">Item 0 1 - 9.99</li>
+                  <li class="list-group-item">Item 0 2 - 9.99</li>
+                  <li class="list-group-item">Total: 29.97</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
