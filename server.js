@@ -26,6 +26,10 @@ app.get('/cart', (req, res) => {
     res.render('cart');
 })
 
+app.get('/utility', (req, res) => {
+    res.render('utility');
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

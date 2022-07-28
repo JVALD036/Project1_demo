@@ -115,3 +115,10 @@ nav-link:hover{
 .CartBorderColorScheme{
     border: 3px solid rgba(255, 0, 0, 0.26);
 }
+
+.UtilityBackgroundColorScheme{
+    background-color: rgba(112, 105, 36, 0.36);
+}
+.UtilityBorderColorScheme{
+    border: 3px solid rgba(112, 105, 36, 0.36);
+}
